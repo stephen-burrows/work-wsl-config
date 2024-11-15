@@ -1,0 +1,11 @@
+[general]
+targets = frontiers_jira
+
+[frontiers_jira]
+service = jira
+jira.base_uri = https://jira.frontiersin.net
+jira.username = stephen.burrows
+jira.PAT = $PAT_TOKEN
+jira.query = assignee = stephen.burrows AND status = "In Progress"
+jira.project_template = {{jiraid}}
+jira.description_template = {{jirasummary}}
